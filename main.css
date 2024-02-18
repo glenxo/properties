@@ -64,7 +64,7 @@ header::after {
   right: 0;
   height: 100%;
   width: calc(50% - 15rem);
-  background-color: #c7ffff;
+  background-color: #c98f13;
   z-index: -1;
 }
 
@@ -311,7 +311,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  background-color: #f1ffff;
+  background-color: #ffcb631a;
 }
 
 .featured__image {
