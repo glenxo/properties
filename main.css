@@ -117,6 +117,14 @@ nav {
   color: var(--primary-color);
 }
 
+.deals__header__content > h2:nth-child(1) {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3.50rem;
+  font-weight: 1000;
+  color: var(--text-dark);
+}
+
 .header__content h1 {
   margin-bottom: 2rem;
   font-size: 3.75rem;
@@ -172,7 +180,7 @@ nav {
 }
 
 .header__image img {
-  max-width: 500px;
+  max-width: 1000px;
   margin: auto;
 }
 
