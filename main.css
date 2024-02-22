@@ -238,6 +238,14 @@ nav {
   color: var(--text-light);
 }
 
+.deals__header > img:nth-child(2){
+  height: 400px;
+  width: auto;
+  margin-bottom: 2.5%
+}
+
+
+
 .deals__header {
   display: flex;
   align-items: center;
@@ -254,6 +262,12 @@ nav {
 .deals__header__content p {
   max-width: 500px;
   color: var(--text-light);
+}
+
+.deals__header__content > img:nth-child(2){
+  height: 180px;
+  width: auto;
+  margin-bottom: 2.5%
 }
 
 .deals__nav {
