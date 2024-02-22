@@ -582,6 +582,13 @@ h5.section__header{
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .deals__header > img:nth-child(2){
+    height: 270px;
+    width: auto;
+    margin-bottom: 2.5%
+  }
+  
+
   .deals__header {
     flex-direction: column;
   }
