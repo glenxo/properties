@@ -179,9 +179,36 @@ nav {
   color: var(--primary-color);
 }
 
+
 .header__image img {
   max-width: 1000px;
   margin: auto;
+}
+
+.image-slides > li:nth-child(1) > img:nth-child(1),
+.image-slides > li:nth-child(2) > img:nth-child(1),
+.image-slides > li:nth-child(3) > img:nth-child(1){
+  width: 600px;
+  height: auto;
+  margin-left: auto;
+}
+
+.image-slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image-slides {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.image-slides li {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease;
 }
 
 .work__grid {
