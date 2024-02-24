@@ -185,7 +185,16 @@ nav {
   margin: auto;
 }
 
-
+img.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  cursor: zoom-out; /* Change cursor to indicate that the image can be closed */
+}
 
 .image-slides > li:nth-child(1) > img:nth-child(1),
 .image-slides > li:nth-child(2) > img:nth-child(1),
