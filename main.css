@@ -581,6 +581,14 @@ h5.section__header{
     grid-area: 1/1/2/2;
   }
 
+  .image-slides > li:nth-child(1) > img:nth-child(1),
+.image-slides > li:nth-child(2) > img:nth-child(1),
+.image-slides > li:nth-child(3) > img:nth-child(1){
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
   .work__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
