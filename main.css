@@ -582,13 +582,37 @@ h5.section__header{
   }
 
   .image-slides > li:nth-child(1) > img:nth-child(1),
-.image-slides > li:nth-child(2) > img:nth-child(1),
-.image-slides > li:nth-child(3) > img:nth-child(1){
+  .image-slides > li:nth-child(2) > img:nth-child(1),
+  .image-slides > li:nth-child(3) > img:nth-child(1){
   width: 300px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center image vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deals__card img {
+  max-width: 100%;
+  height: auto;
+}
+
+
   .work__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;

@@ -209,15 +209,13 @@
 
         expandImageLinks.forEach(function (expandImageLink) {
             const image = expandImageLink.querySelector("img");
-
+            
             expandImageLink.addEventListener("click", function (e) {
-                e.preventDefault(); // Prevent the anchor link from navigating
+                e.preventDefault(); 
 
                 if (image.classList.contains("full-screen")) {
-                    // Image is in full-screen, return to normal
                     image.classList.remove("full-screen");
                 } else {
-                    // Image is not in full-screen, expand it
                     image.classList.add("full-screen");
                 }
             });
