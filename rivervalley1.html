@@ -34,56 +34,80 @@
             Finding the best real estate deals requires careful research,
             negotiation skills, and a keen understanding of market trends.
           </p>
-        </div>
-        <button class="btn">View All Property</button>
-      </div>
-      <div class="deals__nav">
-        <a href="#" class="active">Property's</a>
-        <a href="#">RESIDENTIAL PROPERTIES</a>
-        <a href="#">GLAMPING DOMES</a>
-        <a href="#">LAND DEALS</a>
-      </div>
-      <div class="deals__grid">
-        <div class="deals__card">
-          <img src="/main/pp river valley apto04-015R.jpg" alt="deals" />
-          <span>River Valley</span>
-        </div>
-        <div class="deals__card">
-          <img src="/main/pp river valley apto04-031R.jpg" alt="deals" />
-          <span>Featured</span>
-        </div>
-        <div class="deals__card">
-          <img src="/main/pp river valley apto04-103R.jpg" alt="deals" />
-          <span>Featured</span>
-        </div>
-        <div class="deals__card">
-            <img src="/main/pp river valley apto04-070R.jpg" alt="deals" />
-            <span>River Valley</span>
-          </div>
-          <div class="deals__card">
-            <img src="/main/pp river valley apto04-123R.jpg" alt="deals" />
-            <span>Featured</span>
-          </div>
-          <div class="deals__card">
-            <img src="/main/pp river valley apto04-147R.jpg" alt="deals" />
-            <span>Featured</span>
-          </div>
-          <div class="deals__card">
-            <img src="/main/pp river valley apto04-172R.jpg" alt="deals" />
-            <span>River Valley</span>
-          </div>
-          <div class="deals__card">
-            <img src="/main/pp river valley apto04-193R.jpg" alt="deals" />
-            <span>Featured</span>
-          </div>
-          <div class="deals__card">
-            <img src="/main/pp river valley apto04-103R.jpg" alt="deals" />
-            <span>Featured</span>
-          </div>
           
-      </div>
-    </section>
-
+        </div>
+        <div class="image-slider">
+          <ul class="image-slides">
+            <li><img src="/main/centriqo/cen_BROhoriz_page-0002.jpg" alt="Image 1"></li>
+            <li><img src="/main/centriqo/cen_BROhoriz_page-0016.jpg" alt="Image 2"></li>
+            <li><img src="/main/centriqo/cen_BROhoriz_page-0004.jpg" alt="Image 3"></li>
+          </ul>
+        </div>
+      </div>        
+        </div>
+        <div class="deals__nav">
+          <a href="#" class="active">Property's</a>
+          <a href="#">RESIDENTIAL PROPERTIES</a>
+          <a href="#">GLAMPING DOMES</a>
+          <a href="#">LAND DEALS</a>
+        </div>
+        
+        <div class="deals__grid">
+          <div class="expand-image" class="deals__card">
+            <img src="/main/centriqo/cen_BROhoriz_page-0002.jpg" alt="deals" />
+  
+          </div>
+          <div class="expand-image" class="deals__card">
+            <img src="/main/centriqo/cen_BROhoriz_page-0005.jpg" alt="deals" />
+  
+          </div>
+          <div class="expand-image" class="deals__card">
+            <img src="/main/centriqo/cen_BROhoriz_page-0011.jpg" alt="deals" />
+          </div>
+  
+            <div class="expand-image" class="deals__card">
+              <img src="/main/centriqo/cen_BROhoriz_page-0018.jpg" alt="deals" />
+              
+            </div>
+            <div class="expand-image" class="deals__card">
+              <img src="/main/centriqo/cen_BROhoriz_page-0022.jpg" alt="deals" />
+              
+            </div>
+            <div class="expand-image" class="deals__card">
+              <img src="/main/centriqo/cen_BROhoriz_page-0027.jpg" alt="deals" />
+              
+            </div>
+            
+            <div class="expand-image" class="deals__card">
+              <img src="/main/centriqo/Imagen 9.jpg" alt="deals" />
+        
+            </div>
+            <div class="expand-image" class="deals__card">
+              <img src="/main/centriqo/Imagen 10.jpg" alt="deals" />
+        
+            </div>
+            <div class="expand-image" class="deals__card">
+              <img src="/main/centriqo/Imagen 14.jpg" alt="deals" />
+        
+            </div>
+            
+            <div class="expand-image" class="deals__card">
+              <img src="/main/centriqo/Imagen 16.jpg" alt="deals" />
+    
+            </div>
+            <div class="expand-image" class="deals__card">
+              <img src="/main/centriqo/Imagen 20.jpg" alt="deals" />
+          
+            </div>
+            <div class="expand-image" class="deals__card">
+              <img src="/main/centriqo/Imagen 17.jpg" alt="deals" />
+  
+            </div>
+  
+        </div>
+      </section>
+  
+  
     <section class="section__container featured__container">
       <h2 class="section__header">Featured Listing Of The Week</h2>
       <h5 class="section__header">Panama Pacifico</h5>
@@ -181,4 +205,24 @@
       Copyright © 2023 Web Design Mastery. All rights reserved.
     </div>
   </body>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const expandImageLinks = document.querySelectorAll(".expand-image");
+
+        expandImageLinks.forEach(function (expandImageLink) {
+            const image = expandImageLink.querySelector("img");
+
+            expandImageLink.addEventListener("click", function (e) {
+                e.preventDefault(); 
+
+                if (image.classList.contains("full-screen")) {
+                    image.classList.remove("full-screen");
+                } else {
+                    image.classList.add("full-screen");
+                }
+            });
+        });
+    });
+</script>
 </html>
